@@ -1,18 +1,23 @@
 #include <stdio.h>
 
+#define MAX_STACK_SIZE 100
+typedef int element;
+element stack[MAX_STACK_SIZE];
+int top = -1;
+
+int is_empty()
+{
+	return (top==-1);
+}
+
+int is_full()
+{
+	return (top == (MAX_STACK_SIZE-1));
+}
+
 int main() 
-{ 
-	struct { 
-		char fullname[50]; // Whole name
-		char *lastname; // A pointer indicating the last name
-		char *firstname; // A pointer indicating the first name
-		int age; 
-		char gen; 
-	} student; 
-	
-	// Write source code below 
-
-
-	return 0; 
+{
+	int count;
+	//write source code below
 } 
 
